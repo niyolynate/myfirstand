@@ -1,4 +1,3 @@
-
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
@@ -44,4 +43,9 @@
         android:text="LogOut"
         android:textAllCaps="false" />
 
-</RelativeLayout>
+    <Button
+	    android:id="+idBtnLogin"
+	    android:layout_width="wrp_content"
+	    android:text="Login">
+    <Button/>
+    </RelativeLayout>
