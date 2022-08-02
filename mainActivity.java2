@@ -1,0 +1,47 @@
+package com.ui.emergeApp;
+
+import androidx.appcompat.app.AppCompatActivity ;
+
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
+
+public class MainActivity extends AppCompatActivity {
+    private EditText firstnameEditText;
+    private EditText lastnameEditText
+    private EditText usernameEditText;
+    private EditText passwordEditText;
+    private Button registerButton;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+
+        firstnameEditText = findViewById(R.id.activity_main_firstnameEditText);
+        lastnameEditText = findViewById(R.id.activity_main_lastnameEditText);
+        emailaddressEditText = findViewById(R.id.activity_main_emailEditText);
+        passwordEditText = findViewById(R.id.activity_main_passwordEditText);
+        usernameEditText = findViewById(R.id.activity_main_usernameEditText);
+        passwordEditText = findViewById(R.id.activity_main_passwordEditText);
+        registerButton = findViewById(R.id.activity_main_loginButton);
+
+        registerButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (firstnameEditText.getText().lengthf> 0 &&
+                        lastnameEditText.getText().lengthf> 0 &&
+                        emailIdEditText.getText().lengthf> 0 &&
+                        usernameEditText.getText().length() > 0 && passwordEditText.getText().length() > 0) {
+                    String toastMessage = "Username: " + usernameEditText.getText().toString() + ", Password: " + passwordEditText.getText().toString();
+                    Toast.makeText(getApplicationContext(), toastMessage, Toast.LENGTH_SHORT).show();
+                } else {
+                    String toastMessage = "Username or Password are wrong";
+                    Toast.makeText(getApplicationContext(), toastMessage, Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+    }
