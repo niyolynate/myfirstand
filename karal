@@ -1,0 +1,36 @@
+/*
+*File steepleChase.java
+*karal runs a steeple chase that is 9meters long.
+*hurdles are ofarbiturary height and placement.
+
+import computerclass.kara.*;
+
+public class SteepleChase extends Supernatual {
+
+/*
+*To Run a race that is  very long, we need to move
+
+*/forward or jump hurdles.
+
+      public void run() {
+       for {int i = 0, i<8; i++) {
+       if (frontIsClear()) {
+       move();
+       } else {
+       jumpHurdle();
+       }
+       }
+       }
+       }
+       }
+       /* For condition: facing East  bottom of hurdle 
+       * East condition: facing East at bottom is next after hurdle.
+       *
+       private void jumpHurdle() {
+            ascendHurdle() {
+	    move();
+	    descendHuddle();
+	    }
+	    }
+	   
+
