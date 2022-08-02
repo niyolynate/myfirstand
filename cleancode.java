@@ -33,6 +33,13 @@
 	       moveBackwards();
 
 	}
+	 private void moveBackwards() {
+		 if (beeperBlockedfront()) {
+		 } else (moveForward) {
+			 
+		 }
+	 }
+ }
        Private void moveThePileNextDoorBack() {
 	       move();
 	       while (beeperPresent()) {
